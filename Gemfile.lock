@@ -66,6 +66,7 @@ GEM
 PLATFORMS
   ruby
   x64-mingw32
+  x86_64-linux-musl
 
 DEPENDENCIES
   jekyll (~> 3.8.5)
@@ -74,4 +75,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.1.2
+   2.2.2
