@@ -1,5 +1,5 @@
 # Site/SEO settings
-email: maildasu@gmail.com
+email: sumadruga.blog@gmail.com
 baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: G-46XHRXG1HF
@@ -17,7 +17,7 @@ social:
   - name: instagram
     url: https://www.instagram.com/sumadruga/
   - name: youtube
-    url: https://www.youtube.com/
+    url: https://www.youtube.com/!!!!!!!!!!!
 
 # Contact settings
 contact_img: /assets/images/placeholder-28.jpg
