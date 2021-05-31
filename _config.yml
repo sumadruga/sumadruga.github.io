@@ -5,7 +5,7 @@ permalink: /:year/:month/:day/:title/
 google_analytics: G-46XHRXG1HF
 
 name: Susana Madruga
-title: Titulo da Su!!!!!!!
+title: Shining Soul
 description: >
   Descricao Site da Su!!!!!!
 url: http://www.sumadruga.com
@@ -55,7 +55,7 @@ autopages:
   tags:
     layouts: 
       - 'tag.html'
-    title: 'Blog Da Su!!!!!!!'
+    title: 'Shining Soul'
     permalink: '/tag/:tag'
     slugify:
       mode: raw
