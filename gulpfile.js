@@ -66,7 +66,7 @@ function dist() {
     '!./.git',
     '!./node_modules/**'
   ])
-    .pipe(zip('barber-jekyll.zip'))
+    .pipe(zip('su-site.zip'))
     .pipe(gulp.dest('../'))
 }
 
