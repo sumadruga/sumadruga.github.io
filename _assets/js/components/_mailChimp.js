@@ -30,7 +30,7 @@ const MailChimp = (() => {
         e.preventDefault();
 
         grecaptcha.ready(function() {
-          grecaptcha.execute('{{ site.google_recaptcha }}', {action: 'submit'}).then(function(token) {
+          grecaptcha.execute('6Ld6gUcbAAAAAKBdJa6boWavFQ5dEumtKH4fJ8i1', {action: 'submit'}).then(function(token) {
               // Add your logic to submit to your backend server here.
               $.ajax({
                 url: s.formAction,
