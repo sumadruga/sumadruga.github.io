@@ -27,7 +27,7 @@ formcarry: https://formcarry.com/s/iwquUFz0QZG
 disqus: www-sumadruga-com
 
 # MailChimp settings
-mailchimp_action: https://sumadruga.us1.list-manage.com/subscribe/post?u=3b218c10f07765230edb6f4b1&amp;id=093162d9b2
+mailchimp_action: https://sumadruga.us1.list-manage.com/subscribe/post-json?u=3b218c10f07765230edb6f4b1&amp;id=093162d9b2
 mailchimp_input: b_3b218c10f07765230edb6f4b1_093162d9b2
 
 # Author settings
