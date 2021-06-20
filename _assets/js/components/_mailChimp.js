@@ -29,30 +29,36 @@ const MailChimp = (() => {
       s.formSubmit.on('click', e => {
         e.preventDefault();
 
-        $.ajax({
-          url: s.formAction,
-          type: 'POST',
-          data: s.form.serialize(),
-          dataType: 'jsonp',
-          success: response => {
-            if (response.result === 'error') {
-              setTimeout(() => {
-                s.formMessage.text(`${response.msg}.`);
-                s.formMessage.removeClass('hidden');
-                s.formMessage.addClass(s.animation);
-              }, 750);
-            } else {
-              window.location = `http://${top.location.host.toString()}/subscribe`;
-            }
-          },
-          error: () => {
-            setTimeout(() => {
-              s.formMessage.text('There was an error.');
-              s.formMessage.removeClass('hidden');
-              s.formMessage.addClass(s.animation);
-            }, 750);
-          }
+        grecaptcha.ready(function() {
+          grecaptcha.execute('{{ site.google_recaptcha }}', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+              $.ajax({
+                url: s.formAction,
+                type: 'POST',
+                data: s.form.serialize(),
+                dataType: 'jsonp',
+                success: response => {
+                  if (response.result === 'error') {
+                    setTimeout(() => {
+                      s.formMessage.text(`${response.msg}.`);
+                      s.formMessage.removeClass('hidden');
+                      s.formMessage.addClass(s.animation);
+                    }, 750);
+                  } else {
+                    window.location = `http://${top.location.host.toString()}/subscribe`;
+                  }
+                },
+                error: () => {
+                  setTimeout(() => {
+                    s.formMessage.text('There was an error.');
+                    s.formMessage.removeClass('hidden');
+                    s.formMessage.addClass(s.animation);
+                  }, 750);
+                }
+              });
+          });
         });
+
       });
     }
   };

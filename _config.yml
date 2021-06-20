@@ -3,6 +3,7 @@ email: sumadruga.blog@gmail.com
 baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: G-46XHRXG1HF
+google_recaptcha: 6Ld6gUcbAAAAAKBdJa6boWavFQ5dEumtKH4fJ8i1
 
 name: Susana Madruga
 title: Shining Soul
