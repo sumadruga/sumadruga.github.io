@@ -26,7 +26,8 @@ contact_img: /assets/images/su-silhueta.jpg
 formcarry: https://formcarry.com/s/iwquUFz0QZG
 
 # Disqus settings
-disqus: www-sumadruga-com
+#disqus: www-sumadruga-com
+disqus: 
 
 # MailChimp settings
 mailchimp_action: https://sumadruga.us1.list-manage.com/subscribe/post-json?u=3b218c10f07765230edb6f4b1&amp;id=093162d9b2
