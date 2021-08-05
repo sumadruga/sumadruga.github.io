@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Essência"
+date: 2021-08-05
+description: Essência é tudo aquilo que é feito com o coração e tudo o que vem de raíz
+image: /assets/images/essencia/essencia-1.jpg
+author: Susana Madruga
+tags: 
+  - Essencia
+  - Intensa
+---
+
+### Essência
+
+~~~
+Algo que não se vê, 
+Algo que apenas se sente.
+A essência é aquilo que temos de mais bonito, precioso. Faz de ti uma pessoa única, verdadeira, natural, sem que nada seja planeado. 
+Essência é fechar os olhos e apenas sentir sem qualquer tipo de preconceito, sem qualquer tipo de ideias pré-definidas. 
+Essência é o verbo sentir.
+Essência é tudo aquilo que é feito com o coração e tudo o que vem de raíz. 
+Ser intensa é a minha essência.  
+~~~
+
+![Enchanted Forest](/assets/images/essencia/essencia-2.jpg)
+
