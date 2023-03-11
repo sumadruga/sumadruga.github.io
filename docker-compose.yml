@@ -3,7 +3,12 @@ version: '2'
 services:
   jekyll:
     image: jekyll/jekyll:4.2.0
-    command: jekyll serve --watch --force_polling --verbose
+    command: 
+      - /bin/sh
+      - -c
+      - |
+        npm install
+        jekyll serve --watch --force_polling --verbose
     ports:
       - 4000:4000
     volumes:
