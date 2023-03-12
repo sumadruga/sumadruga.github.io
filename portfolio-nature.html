@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: portfolio
+title: Nature
 pagination:
   enabled: true
 ---
@@ -11,7 +12,9 @@ pagination:
       {% for post in paginator.posts %}
 
         <!-- The tag below includes the markup for each post - partials/post-card.html -->
-        {% include post-card.html %}
+        {% if post.layout == 'portfolio-item' and post.type == 'nature' %}
+         {% include post-card.html %}
+        {% endif %}
 
       {% endfor %}
     </div>
