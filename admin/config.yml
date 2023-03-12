@@ -1,0 +1,27 @@
+backend:
+  name: test-repo
+  #name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+# This line should *not* be indented
+media_folder: "assets/images/uploads" # Media files will be stored in the repo under images/uploads
+
+collections:
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", required: true, widget: "select", options: ["post", "portfolio-item"], default: "post"}
+      - {label: "Type", name: "type", required: false, widget: "select", options: ["nature", "instagram"]}
+      - {label: "Title", name: "title", required: true, widget: "string"}
+      - {label: "Publish Date", name: "date", required: true, widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Author", name: "author", widget: "string", default: "Susana Madruga"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}

@@ -30,3 +30,16 @@
 <script src="{{ '/assets/js/app.min.js' | prepend: site.baseurl }}"></script>
 
 <script src="https://www.google.com/recaptcha/api.js?render={{ site.google_recaptcha }}"></script>
+
+<!-- Netlify Identiy redirect to the admin page-->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
