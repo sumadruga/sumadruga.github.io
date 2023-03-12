@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: Photo Shoot
-description: I've always liked the amazing world of photography but I've never tried it in a creative way. I´ve started to take photos in 2020 while adventuring in the nature, and since then I've been working on some projects to explore ideas that are dear to me. 
+title: Nature
+description: Text to be added
 pagination:
   enabled: true
 ---
@@ -13,10 +13,11 @@ pagination:
       {% for post in paginator.posts %}
 
         <!-- The tag below includes the markup for each post - partials/post-card.html -->
-        {% if post.layout == 'portfolio-item' and post.type == 'photo' %}
+        {% if post.layout == 'portfolio-item' and post.type == 'nature' %}
          {% include post-card.html %}
         {% endif %}
 
+        
       {% endfor %}
     </div>
   </div>
