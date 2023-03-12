@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Cooking
+title: Food
 description: Cooking and baking are also ways to create. When I'm cooking or baking I feel like I’m painting on a canvas and I can play with flavours, smells, tastes and colours, and I can create and share memories with my friends, family and especially with my daughters. I put my secret ingredient in every recipe - Love! 
 pagination:
   enabled: true
@@ -13,7 +13,7 @@ pagination:
       {% for post in paginator.posts %}
 
         <!-- The tag below includes the markup for each post - partials/post-card.html -->
-        {% if post.layout == 'portfolio-item' and post.type == 'cooking' %}
+        {% if post.layout == 'portfolio-item' and post.type == 'food' %}
          {% include post-card.html %}
         {% endif %}
 
