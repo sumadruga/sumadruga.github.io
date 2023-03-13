@@ -3,7 +3,7 @@ layout: portfolio
 title: Photo Shoot
 description: I've always liked the amazing world of photography but I've never tried it in a creative way. I´ve started to take photos in 2020 while adventuring in the nature, and since then I've been working on some projects to explore ideas that are dear to me. 
 pagination:
-  enabled: true
+  enabled: false
 ---
 <!-- The main content area -->
 <div class="posts">
@@ -14,7 +14,7 @@ pagination:
 
         <!-- The tag below includes the markup for each post - partials/post-card.html -->
         {% if post.layout == 'portfolio-item' and post.type == 'photo' %}
-         {% include post-card.html %}
+         {% include portfolio-card.html %}
         {% endif %}
 
       {% endfor %}

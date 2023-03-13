@@ -3,7 +3,7 @@ layout: portfolio
 title: Dance
 description: When I'm dancing, I forget about the world around me and I feel a strong connection to myself. I go through my thoughts, my feelings, my soul... and I can show who I really am. It’s where I find myself. 
 pagination:
-  enabled: true
+  enabled: false
 ---
 <!-- The main content area -->
 <div class="posts">
@@ -14,7 +14,7 @@ pagination:
 
         <!-- The tag below includes the markup for each post - partials/post-card.html -->
         {% if post.layout == 'portfolio-item' and post.type == 'dance' %}
-         {% include post-card.html %}
+         {% include portfolio-card.html %}
         {% endif %}
 
       {% endfor %}
