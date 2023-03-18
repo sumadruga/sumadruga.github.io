@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: Nature
-description: Text to be added
+description: Everything is energy! Thoughts, emotions, touch...  When I’m walking in nature, my wild animal gets out and I can feel every leaf, every tree and experience every sign from silence. Nature is where I get inspiration for writing, for photography and to take a break.
 pagination:
   enabled: false
 ---
@@ -10,7 +10,7 @@ pagination:
   <div class="grid-xlarge">
     <div class="posts__container" itemscope itemtype="http://schema.org/Blog" data-columns>
 
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
 
         <!-- The tag below includes the markup for each post - partials/post-card.html -->
         {% if post.layout == 'portfolio-item' and post.type == 'nature' %}
