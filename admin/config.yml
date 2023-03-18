@@ -1,6 +1,6 @@
 backend:
-  name: test-repo
-  #name: git-gateway
+  #name: test-repo
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
 # This line should *not* be indented
