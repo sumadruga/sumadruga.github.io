@@ -37,35 +37,38 @@ const Formcarry = (() => {
       s.form.submit(e => {
         e.preventDefault();
 
-        grecaptcha.ready(function() {
-          grecaptcha.execute('6Ld6gUcbAAAAAKBdJa6boWavFQ5dEumtKH4fJ8i1', {action: 'submit'}).then(function(token) {
-              // Add your logic to submit to your backend server here.
-              $.ajax({
-                url: s.formAction,
-                method: 'POST',
-                data: s.form.serialize(),
-                dataType: 'json',
-                success: () => {
-                  s.body.addClass(s.closing);
-                  s.body.removeClass(s.open);
-                  s.html.removeClass(s.overflow);
-      
-                  setTimeout(() => {
-                    s.form[0].reset();
-                    s.body.removeClass(s.closing);
-                  }, 800);
-                },
-                error: () => {
-                  setTimeout(() => {
-                    s.formMessage.removeClass(s.animation);
-                    s.formMessage.addClass(s.animation);
-                    s.formMessage.text('Something Went Wrong');
-                  }, 750);
-                }
-              });
+        // Add your logic to submit to your backend server here.
+        if(!grecaptcha.getResponse()) {
+          s.formMessage.removeClass(s.animation);
+          s.formMessage.addClass(s.animation);
+          s.formMessage.text('Please let us know that you are a person');
+          return;
+        }
 
-          });
+        $.ajax({
+          url: s.formAction,
+          method: 'POST',
+          data: s.form.serialize(),
+          dataType: 'json',
+          success: () => {
+            s.body.addClass(s.closing);
+            s.body.removeClass(s.open);
+            s.html.removeClass(s.overflow);
+
+            setTimeout(() => {
+              s.form[0].reset();
+              s.body.removeClass(s.closing);
+            }, 800);
+          },
+          error: () => {
+            setTimeout(() => {
+              s.formMessage.removeClass(s.animation);
+              s.formMessage.addClass(s.animation);
+              s.formMessage.text('Something Went Wrong');
+            }, 750);
+          }
         });
+        
 
       });
     }

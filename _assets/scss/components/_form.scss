@@ -7,6 +7,10 @@
   justify-content: center;
   flex-direction: column;
 
+  .g-recaptcha {
+    margin-bottom: 1.5em;
+  }
+
   input,
   textarea {
     margin-bottom: 1.5em;
