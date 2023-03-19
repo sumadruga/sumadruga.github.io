@@ -1,9 +1,11 @@
 <nav>
-  <ul class="header__list">
+  <ul class="header__list" id="myTopnav">
     <li><a href="{{ '/' | prepend: site.baseurl }}">Moments</a></li>
     <li><a href="{{ '/portfolio' | prepend: site.baseurl }}">Portfolio</a></li>
     <li><a href="{{ '/about-su' | prepend: site.baseurl }}">About Su</a></li>
     <li><span class="popup__open">Contact</span></li>
+    <li><a href="javascript:void(0);" class="icon" onclick="toggleNavMenu();">&#9776;</a></li>
   </ul>
   
+
 </nav>
