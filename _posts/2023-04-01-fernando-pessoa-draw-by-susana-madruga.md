@@ -6,9 +6,13 @@ image: /assets/images/uploads/02e1b940-ea46-43a4-ae88-e618817c8436.jpeg
 description: One of my favorite poems- Fernando Pessoa 🇵🇹
 author: Susana Madruga
 tags:
-  - "\\#fernandopessoa #fernandopessoapoeta #fernandopessoalovers
-    #fernandopessoaquotes #fernandopessoafrases #fernandopessoapoeta
-    #portugalfernandopessoa"
+  - fernandopessoa
+  - fernandopessoapoeta
+  - fernandopessoalovers
+  - fernandopessoaquotes
+  - fernandopessoafrases
+  - fernandopessoapoeta
+  - portugalfernandopessoa
 ---
 
 
