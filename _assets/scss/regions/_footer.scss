@@ -3,7 +3,7 @@
 //---------------------------------------------- 
 .footer {
   color: $color-white;
-  background-color: $color-black;
+  background-color: $dark-bg;
   border-top: $border;
 
   &__container {
@@ -24,6 +24,7 @@
       }
     }
   }
+
 
   &__link {
     font-size: $font-small;
