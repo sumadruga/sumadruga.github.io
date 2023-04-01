@@ -119,7 +119,7 @@
 //----------------------------------------------
 // Jekyll
 //---------------------------------------------- 
-#markdown {
+#markdown-portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,7 +213,7 @@
   a {
     color: $color-white;
     border-bottom: 2px solid $color-grey;
-    box-shadow: inset 0 -3px 0 $color-grey;
+    // box-shadow: inset 0 -3px 0 $color-grey;
   }
 
   hr {
