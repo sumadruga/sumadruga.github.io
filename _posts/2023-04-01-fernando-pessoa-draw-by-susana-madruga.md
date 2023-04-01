@@ -7,12 +7,7 @@ description: One of my favorite poems- Fernando Pessoa 🇵🇹
 author: Susana Madruga
 tags:
   - fernandopessoa
-  - fernandopessoapoeta
-  - fernandopessoalovers
-  - fernandopessoaquotes
-  - fernandopessoafrases
-  - fernandopessoapoeta
-  - portugalfernandopessoa
+  - Poetry
 ---
 “𝚃𝚑𝚎 𝚟𝚊𝚕𝚞𝚎 𝚘𝚏 𝚝𝚑𝚒𝚗𝚐𝚜 𝚒𝚜 𝚗𝚘𝚝 𝚝𝚑𝚎 𝚝𝚒𝚖𝚎 𝚝𝚑𝚎𝚢 𝚕𝚊𝚜𝚝, 𝚋𝚞𝚝 𝚝𝚑𝚎 𝚒𝚗𝚝𝚎𝚗𝚜𝚒𝚝𝚢 𝚠𝚒𝚝𝚑 𝚠𝚑𝚒𝚌𝚑 𝚝𝚑𝚎𝚢 𝚘𝚌𝚌𝚞𝚛. 𝚃𝚑𝚊𝚝 𝚒𝚜 𝚠𝚑𝚢 𝚝𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚞𝚗𝚏𝚘𝚛𝚐𝚎𝚝𝚝𝚊𝚋𝚕𝚎 𝚖𝚘𝚖𝚎𝚗𝚝𝚜 𝚊𝚗𝚍 𝚞𝚗𝚒𝚚𝚞𝚎 𝚙𝚎𝚘𝚙𝚕𝚎.”
 
