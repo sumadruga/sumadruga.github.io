@@ -1,11 +1,20 @@
-<nav>
-  <ul class="header__list" id="myTopnav">
-    <li><a href="{{ '/' | prepend: site.baseurl }}">Moments</a></li>
-    <li><a href="{{ '/portfolio' | prepend: site.baseurl }}">Portfolio</a></li>
-    <li><a href="{{ '/about-su' | prepend: site.baseurl }}">About Su</a></li>
-    <li><span class="popup__open">Contact</span></li>
-    <li><a href="javascript:void(0);" class="icon" onclick="toggleNavMenu();">&#9776;</a></li>
-  </ul>
-  
+<input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
 
-</nav>
+<div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+  <nav>
+
+    <ul class="luxbar-navigation ">
+        <li class="luxbar-header">
+            <a class="luxbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+            <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+            id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+        </li>
+
+        <li class="luxbar-item"><a href="{{ '/' | prepend: site.baseurl }}">Moments</a></li>
+        <li class="luxbar-item"><a href="{{ '/portfolio' | prepend: site.baseurl }}">Portfolio</a></li>
+        <li class="luxbar-item"><a href="{{ '/about-su' | prepend: site.baseurl }}">About Su</a></li>
+        <li class="luxbar-item"><a class="popup__open">Contact</a></li>
+        
+    </ul>
+  </nav>
+</div>
