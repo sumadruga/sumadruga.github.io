@@ -37,6 +37,7 @@ layout: default
         </div>
       </div>
 
+
       <div class="section-padding">
         <div class="grid-small">
           {% for author in page.author %}
@@ -49,6 +50,14 @@ layout: default
             {% if authorDetails[0]["url"] %}<a href="{{ authorDetails[0]['url'] }}" title="More By {{ author }}">{% endif %}{{ author }}{% if authorDetails[0]["url"] %}</a>{% endif %}</span>
             <p class="post__bio">{{ authorDetails[0]["bio"] }}</p>
           {% endfor %}
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="grid-small buy-me-a-coffee-button">
+          <a href="https://www.buymeacoffee.com/sumadruga" target="_blank" rel="noreferrer noopener">
+            <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sumadruga&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" />
+          </a>
         </div>
       </div>
     {% endif %}
